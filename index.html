@@ -1,217 +1,864 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashita Singhvi - Software Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .project-card {
-            min-height: 340px;
-        }
-        .skill-tag {
-            display: inline-block;
-            padding: 4px 8px;
-            margin: 4px;
-            background-color: #f1f1f1;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
+    <meta name="description" content="Aashita Singhvi's Portfolio - AI/ML Engineer">            
+    <title>Aashita Singhvi's Portfolio</title>
+    <style cssr-id="vueuc/binder">.v-binder-follower-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: auto;
+}
 
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-        <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXPERIENCE</a>
-        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
-        <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILLS</a>
-    </div>
-</div>
+.v-binder-follower-content {
+  position: absolute;
+  z-index: auto;
+}
 
-<!-- Home Section -->
-<header class="w3-container w3-padding-64 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo">Aashita Singhvi</h1>
-    <p class="w3-large">Software Development Engineer</p>
-    <div class="w3-padding-32">
-        <a href="mailto:asinghvi@seattleu.edu" class="w3-button w3-white w3-margin"><i class="fa fa-envelope"></i> Email</a>
-        <a href="https://linkedin.com/in/aaashita/" target="_blank" class="w3-button w3-white w3-margin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/Aashita-Singhvi/" target="_blank" class="w3-button w3-white w3-margin"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-</header>
+.v-binder-follower-content > * {
+  pointer-events: all;
+}</style><style cssr-id="n-global">body {
 
-<!-- About Section -->
-<div class="w3-container w3-padding-64 w3-light-grey" id="about">
-    <h2 class="w3-center">ABOUT ME</h2>
-    <div class="w3-content w3-text-grey">
-        <p class="w3-center">Experienced Software Development Engineer with 5+ years in full-stack and microservices development. Currently pursuing MS in Computer Science at Seattle University. Skilled in building scalable solutions, using AWS and CloudFormation for efficient deployments, and enhancing development strategies for high-quality code.</p>
-    </div>
-</div>
+ margin: 0;
+ font-size: 14px;
+ font-family: v-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ line-height: 1.6;
+ -webkit-text-size-adjust: 100%;
+ -webkit-tap-highlight-color: transparent;
 
-<!-- Experience Section -->
-<div class="w3-container w3-padding-64" id="experience">
-    <h2 class="w3-center">WORK EXPERIENCE</h2>
+}
+
+body input {
+
+ font-family: inherit;
+ font-size: inherit;
+ 
+}</style><style cssr-id="n-popover">.n-popover {
+
+ transition:
+ box-shadow .3s var(--n-bezier),
+ background-color .3s var(--n-bezier),
+ color .3s var(--n-bezier);
+ position: relative;
+ font-size: var(--n-font-size);
+ color: var(--n-text-color);
+ box-shadow: var(--n-box-shadow);
+ word-break: break-word;
+ 
+}
+
+.n-popover > .n-scrollbar {
+
+ height: inherit;
+ max-height: inherit;
+ 
+}
+
+.n-popover:not(.n-popover--raw) {
+
+ background-color: var(--n-color);
+ border-radius: var(--n-border-radius);
+ 
+}
+
+.n-popover:not(.n-popover--raw):not(.n-popover--scrollable):not(.n-popover--show-header-or-footer) {
+padding: var(--n-padding);
+}
+
+.n-popover .n-popover__header {
+
+ padding: var(--n-padding);
+ border-bottom: 1px solid var(--n-divider-color);
+ transition: border-color .3s var(--n-bezier);
+ 
+}
+
+.n-popover .n-popover__footer {
+
+ padding: var(--n-padding);
+ border-top: 1px solid var(--n-divider-color);
+ transition: border-color .3s var(--n-bezier);
+ 
+}
+
+.n-popover.n-popover--scrollable .n-popover__content, .n-popover.n-popover--show-header-or-footer .n-popover__content {
+
+ padding: var(--n-padding);
+ 
+}
+
+.n-popover-shared {
+
+ transform-origin: inherit;
+ 
+}
+
+.n-popover-shared .n-popover-arrow-wrapper {
+
+ position: absolute;
+ overflow: hidden;
+ pointer-events: none;
+ 
+}
+
+.n-popover-shared .n-popover-arrow-wrapper .n-popover-arrow {
+
+ transition: background-color .3s var(--n-bezier);
+ position: absolute;
+ display: block;
+ width: calc(var(--n-arrow-height) * 1.414);
+ height: calc(var(--n-arrow-height) * 1.414);
+ box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
+ transform: rotate(45deg);
+ background-color: var(--n-color);
+ pointer-events: all;
+ 
+}
+
+.n-popover-shared.popover-transition-enter-from, .n-popover-shared.popover-transition-leave-to {
+
+ opacity: 0;
+ transform: scale(.85);
+ 
+}
+
+.n-popover-shared.popover-transition-enter-to, .n-popover-shared.popover-transition-leave-from {
+
+ transform: scale(1);
+ opacity: 1;
+ 
+}
+
+.n-popover-shared.popover-transition-enter-active {
+
+ transition:
+ box-shadow .3s var(--n-bezier),
+ background-color .3s var(--n-bezier),
+ color .3s var(--n-bezier),
+ opacity .15s var(--n-bezier-ease-out),
+ transform .15s var(--n-bezier-ease-out);
+ 
+}
+
+.n-popover-shared.popover-transition-leave-active {
+
+ transition:
+ box-shadow .3s var(--n-bezier),
+ background-color .3s var(--n-bezier),
+ color .3s var(--n-bezier),
+ opacity .15s var(--n-bezier-ease-in),
+ transform .15s var(--n-bezier-ease-in);
+ 
+}
+
+[v-placement="top-start"] > .n-popover-shared {
+
+ margin-bottom: var(--n-space);
+ 
+}
+
+[v-placement="top-start"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-bottom: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top-start"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="top-start"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ top: 100%;
+ bottom: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top-start"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ top: calc(var(--n-arrow-height) * 1.414 / -2);
+ left: calc(var(--n-arrow-offset) - var(--v-offset-left));
+ 
+}
+
+[v-placement="top"] > .n-popover-shared {
+
+ margin-bottom: var(--n-space);
+ 
+}
+
+[v-placement="top"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-bottom: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="top"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ top: 100%;
+ bottom: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ top: calc(var(--n-arrow-height) * 1.414 / -2);
+ transform: translateX(calc(var(--n-arrow-height) * 1.414 / -2)) rotate(45deg);
+ left: 50%;
+ 
+}
+
+[v-placement="top-end"] > .n-popover-shared {
+
+ margin-bottom: var(--n-space);
+ 
+}
+
+[v-placement="top-end"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-bottom: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top-end"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="top-end"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ top: 100%;
+ bottom: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="top-end"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ top: calc(var(--n-arrow-height) * 1.414 / -2);
+ right: calc(var(--n-arrow-offset) + var(--v-offset-left));
+ 
+}
+
+[v-placement="bottom-start"] > .n-popover-shared {
+
+ margin-top: var(--n-space);
+ 
+}
+
+[v-placement="bottom-start"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-top: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom-start"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="bottom-start"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ bottom: 100%;
+ top: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom-start"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ bottom: calc(var(--n-arrow-height) * 1.414 / -2);
+ left: calc(var(--n-arrow-offset) - var(--v-offset-left));
+ 
+}
+
+[v-placement="bottom"] > .n-popover-shared {
+
+ margin-top: var(--n-space);
+ 
+}
+
+[v-placement="bottom"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-top: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="bottom"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ bottom: 100%;
+ top: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ bottom: calc(var(--n-arrow-height) * 1.414 / -2);
+ transform: translateX(calc(var(--n-arrow-height) * 1.414 / -2)) rotate(45deg);
+ left: 50%;
+ 
+}
+
+[v-placement="bottom-end"] > .n-popover-shared {
+
+ margin-top: var(--n-space);
+ 
+}
+
+[v-placement="bottom-end"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-top: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom-end"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="bottom-end"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ bottom: 100%;
+ top: auto;
+ height: var(--n-space-arrow);
+ 
+}
+
+[v-placement="bottom-end"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ bottom: calc(var(--n-arrow-height) * 1.414 / -2);
+ right: calc(var(--n-arrow-offset) + var(--v-offset-left));
+ 
+}
+
+[v-placement="left-start"] > .n-popover-shared {
+
+ margin-right: var(--n-space);
+ 
+}
+
+[v-placement="left-start"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-right: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left-start"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="left-start"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ left: 100%;
+ right: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left-start"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ left: calc(var(--n-arrow-height) * 1.414 / -2);
+ top: calc(var(--n-arrow-offset-vertical) - var(--v-offset-top));
+ 
+}
+
+[v-placement="left"] > .n-popover-shared {
+
+ margin-right: var(--n-space);
+ 
+}
+
+[v-placement="left"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-right: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="left"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ left: 100%;
+ right: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ left: calc(var(--n-arrow-height) * 1.414 / -2);
+ transform: translateY(calc(var(--n-arrow-height) * 1.414 / -2)) rotate(45deg);
+ top: 50%;
+ 
+}
+
+[v-placement="left-end"] > .n-popover-shared {
+
+ margin-right: var(--n-space);
+ 
+}
+
+[v-placement="left-end"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-right: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left-end"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="left-end"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ left: 100%;
+ right: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="left-end"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ left: calc(var(--n-arrow-height) * 1.414 / -2);
+ bottom: calc(var(--n-arrow-offset-vertical) + var(--v-offset-top));
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared {
+
+ margin-left: var(--n-space);
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-left: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 100%;
+ left: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ right: calc(var(--n-arrow-height) * 1.414 / -2);
+ top: calc(var(--n-arrow-offset-vertical) - var(--v-offset-top));
+ 
+}
+
+[v-placement="right"] > .n-popover-shared {
+
+ margin-left: var(--n-space);
+ 
+}
+
+[v-placement="right"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-left: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="right"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 100%;
+ left: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ right: calc(var(--n-arrow-height) * 1.414 / -2);
+ transform: translateY(calc(var(--n-arrow-height) * 1.414 / -2)) rotate(45deg);
+ top: 50%;
+ 
+}
+
+[v-placement="right-end"] > .n-popover-shared {
+
+ margin-left: var(--n-space);
+ 
+}
+
+[v-placement="right-end"] > .n-popover-shared.n-popover-shared--show-arrow {
+
+ margin-left: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right-end"] > .n-popover-shared.n-popover-shared--overlap {
+
+ margin: 0;
+ 
+}
+
+[v-placement="right-end"] > .n-popover-shared > .n-popover-arrow-wrapper {
+
+ right: 0;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 100%;
+ left: auto;
+ width: var(--n-space-arrow);
+ 
+}
+
+[v-placement="right-end"] > .n-popover-shared > .n-popover-arrow-wrapper .n-popover-arrow {
+
+ right: calc(var(--n-arrow-height) * 1.414 / -2);
+ bottom: calc(var(--n-arrow-offset-vertical) + var(--v-offset-top));
+ 
+}
+
+[v-placement="right-start"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+top: calc(max(calc((var(--v-target-height, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset-vertical)) - var(--v-offset-top));
+}
+
+[v-placement="left-start"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+top: calc(max(calc((var(--v-target-height, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset-vertical)) - var(--v-offset-top));
+}
+
+[v-placement="top-end"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+right: calc(max(calc((var(--v-target-width, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset)) + var(--v-offset-left));
+}
+
+[v-placement="bottom-end"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+right: calc(max(calc((var(--v-target-width, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset)) + var(--v-offset-left));
+}
+
+[v-placement="right-end"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+bottom: calc(max(calc((var(--v-target-height, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset-vertical)) + var(--v-offset-top));
+}
+
+[v-placement="left-end"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+bottom: calc(max(calc((var(--v-target-height, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset-vertical)) + var(--v-offset-top));
+}
+
+[v-placement="top-start"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+left: calc(max(calc((var(--v-target-width, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset)) - var(--v-offset-left));
+}
+
+[v-placement="bottom-start"] > .n-popover-shared.n-popover-shared--center-arrow .n-popover-arrow {
+left: calc(max(calc((var(--v-target-width, 0px) - var(--n-arrow-height) * 1.414) / 2), var(--n-arrow-offset)) - var(--v-offset-left));
+}</style><link rel="stylesheet" href="style.css">
+<script id="simplify-jobs-page-script" src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script></head>
+<body data-new-gr-c-s-check-loaded="14.1223.0" data-gr-ext-installed="">
+
+    <nav id="desktop-nav">
+        <div class="logo">Aashita Singhvi</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <div class="w3-content">
-        <div class="w3-card-4 w3-margin">
-            <header class="w3-container w3-black">
-                <h3>Software Developer Intern - Seattle University</h3>
-                <p class="w3-opacity">Nov 2023 – Present</p>
-            </header>
-            <div class="w3-container">
-                <ul class="w3-ul">
-                    <li>Developed AWS CloudFormation templates in YAML automating the deployment process</li>
-                    <li>Migrated PowerShell integrations to AWS using Python</li>
-                    <li>Collaborated on cross-functional projects involving AWS/Azure DevOps automation</li>
-                </ul>
+    <!-- Hamburger Menu for Mobile -->
+    <nav id="hamburger-nav">
+        <div class="logo">Aashita Singhvi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
             </div>
         </div>
-
-        <div class="w3-card-4 w3-margin">
-            <header class="w3-container w3-black">
-                <h3>Senior Software Development Engineer - CSG Systems</h3>
-                <p class="w3-opacity">Feb 2023 - Aug 2023</p>
-            </header>
-            <div class="w3-container">
-                <ul class="w3-ul">
-                    <li>Architected centralized logging system for microservices</li>
-                    <li>Established coding standards and documentation practices</li>
-                    <li>Integrated Swagger documentation across services</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="w3-card-4 w3-margin">
-            <header class="w3-container w3-black">
-                <h3>Senior Software Engineer - Infosys</h3>
-                <p class="w3-opacity">Dec 2019 - Apr 2022</p>
-            </header>
-            <div class="w3-container">
-                <ul class="w3-ul">
-                    <li>Led product integration and solution delivery for US and UK clients</li>
-                    <li>Developed scalable microservices using Angular and NodeJS</li>
-                    <li>Redesigned configuration management system</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Projects Section -->
-<div class="w3-container w3-padding-64 w3-light-grey" id="projects">
-    <h2 class="w3-center">PROJECTS</h2>
+    </nav>
     
-    <div class="w3-row-padding w3-center">
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card-4 project-card">
-                <header class="w3-container w3-black">
-                    <h3>Serverless Employee Management System</h3>
-                </header>
-                <div class="w3-container">
-                    <p>Cloud-native SAAS solution for workforce management using Python, AWS (S3, DynamoDB), microservices architecture, and RESTful APIs with OAuth 2.0.</p>
-                    <div class="w3-section">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile.jpg" alt="Aashita Singhvi profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p2">MS in Computer Science at Seattle University</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('https://1drv.ms/b/s!ArxoW_lej0KclcdFcpQ6wAf7QhgIEg?e=KF1jeZ')" jf-ext-button-ct="download cv">
+                    Download CV
+                </button>                  
+                <button class="btn btn-color-1" onclick="location.href='#contact'" jf-ext-button-ct="contact info">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/aaashita/'">
+                <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/Aashita-Singhvi'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="text-container-1">
+                <p>
+                    Hi, I'm Aashita Singhvi, an experienced Software Development Engineer with 5+ years in full-stack and microservices development. Currently pursuing MS in Computer Science at Seattle University. Skilled in building scalable solutions, using AWS and CloudFormation for efficient deployments, and enhancing development strategies for high-quality code.
+                </p><br>
+                <!-- <p>
+                    <h3>Skills:</h3> 
+                    <ul>
+                        <li><strong>Programming:</strong> C, Python, Java, HTML, JavaScript, C#, C++ </li>
+                        <li><strong>Tools and Technologies:</strong> Unity, Pandas, TensorFlow, Keras, NLTK, Scikit-Learn, CSS, MySQL, DBMS, Docker, IoT, OpenCV, Web Development, Digital Signal Processing, RaspberryPi, Git, Google AppScript, React.js, Azure, AWS</li>
+                        <li><strong>Artificial Intelligence:</strong> Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Calculus, Statistics, Reinforcement Learning, POMDP, Large Language Models, PyTorch, NumPy, Pandas</li>
+                    </ul>
+                </p> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="animate-dynamic">
+        <p class="section__text__p1">Technical Skills</p>
+        <h1 class="title">What I Excel At</h1>
+        <div class="section-container skills-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <p>Python, TypeScript, JavaScript, HTML, Java</p>
+          </div>
+          <div class="skill-card">
+            <h3>Technologies</h3>
+            <p>CSS, Angular, Node.js, Express, Redux, Django, Flask, React, Bootstrap, Material-UI</p>
+          </div>
+          <div class="skill-card">
+            <h3>Databases &amp; Cloud</h3>
+            <p>AWS, Git, Docker, Kubernetes, CI/CD, MySQL, MongoDB, Redis</p>
+          </div>
+          <div class="skill-card">
+            <h3>Domain Skills</h3>
+            <p>Full Stack Development, Mobile Development, Agile Methodologies, RESTful API Design, Microservices Architecture, SDLC, Software Architecture</p>
+          </div>
+        </div>
+      </section>
+
+    <section id="education">
+        <p class="section__text__p1">Get to Know About My</p>
+        <h1 class="title">Education</h1>
+        <div class="section-container">
+            <div class="text-container-2">
+                <p>
+                    </p><h3>Master's of Science in Computer Science:</h3> <strong>Coursework:</strong>  <br> <strong>GPA:</strong> 3.85
+                <p></p>
+            </div>
+            <div class="text-container-2">
+                <p>
+                    </p><h3>Bachelor's of Engineering in Computer Engineering:</h3> <strong>Coursework:</strong> <br> <strong>GPA:</strong> 9.27                
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Software Developer Intern, Seattle University</h3>
+                    <p>November 2023 - Present</p>
+                    <ul>
+                        <li>Developed AWS CloudFormation templates in YAML automating the deployment process and improving efficiency by 65%.</li>
+                        <li>Migrated PowerShell integrations from on-premises servers to AWS, converting them to standardized Python code.</li>
+                        <li>Collaborated on cross-functional projects involving AWS/Azure DevOps automation, SQL optimization, and technical documentation.</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h3>Senior Software Development Engineer, CSG Systems</h3>
+                    <p>February 2023 - August 2023</p>
+                    <ul>
+                        <li>Architected and implemented a centralized logging system for microservices, reducing troubleshooting time by 40%.</li>
+                        <li>Established robust coding standards and documentation practices, resulting in 25% reduction in code rework.</li>
+                        <li>Integrated Swagger documentation across services, facilitating smoother inter-component communication.</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h3>Senior Software Engineer, Infosys</h3>
+                    <p>December 2019 - April 2022</p>
+                    <ul>
+                        <li>Led product integration and solution delivery for US and UK clients, increasing user satisfaction by 35%.</li>
+                        <li>Developed scalable, stateful microservices using Angular and NodeJS, boosting product efficiency by over 30%.</li>
+                        <li>Redesigned the configuration management system, improving customer onboarding efficiency by 22%.</li>
+                        <li>Developed key features including repeatable blocks and variables, allowing 40% faster webpage design.</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h3>Software Developer, SRKay Consulting Group</h3>
+                    <p>June 2017 - December 2019</p>
+                    <ul>
+                        <li>Improved application performance by restructuring APIs, reducing loading time by 5 seconds.</li>
+                        <li>Created a candidate pricing model using Java and Drools rule engine, generating 5% incremental revenue.</li>
+                        <li>Built Excel mapping feature for data uploads and implemented SMS transport service with 50% user adoption.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-containers">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front" style="background-image: url('./assets/serverless.png');">
+                        <h2 class="experience-sub-title">Serverless Employee Management</h2>
+                    </div>
+                    <div class="project-card-back">
+                        <p>Cloud-native SAAS solution for workforce management using Python and AWS services.</p>
+                        <p>Implemented microservices architecture and RESTful APIs with OAuth 2.0 for security.</p>
+                        <p>Optimized deployment using Docker and Kubernetes for improved resource utilization.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front" style="background-image: url('./assets/address.png');">
+                        <h2 class="experience-sub-title">Address Manager</h2>
+                    </div>
+                    <div class="project-card-back">
+                        <p>High-performance web service for validating and searching country-specific postal addresses.</p>
+                        <p>Achieved 60ms response times with robust support for 1000+ concurrent requests.</p>
+                        <p>Built using Python, Flask, MongoDB, Angular, and Nginx server.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front" style="background-image: url('./assets/crossway.png');">
+                        <h2 class="experience-sub-title">Intelligent Crossway</h2>
+                    </div>
+                    <div class="project-card-back">
+                        <p>Smart traffic management system using Python and OpenCV for real-time pedestrian detection.</p>
+                        <p>Implemented inter-signal communication using Raspberry Pi devices for coordinated traffic control.</p>
+                        <p>Integrated cameras and computer vision for automated crosswalk signal activation.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card-4 project-card">
-                <header class="w3-container w3-black">
-                    <h3>Address Manager</h3>
-                </header>
-                <div class="w3-container">
-                    <p>High-performance web service for validating and searching country-specific postal addresses, achieving 60ms response times with support for 1000+ concurrent requests.</p>
-                    <div class="w3-section">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Angular</span>
-                    </div>
-                </div>
+    </section>
+   
+    <section id="contact">
+        <p class="section__text__p1">Let's Connect</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:asinghvi@seattleu.edu">asinghvi@seattleu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/aaashita">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon">
+                <p><a href="https://github.com/Aashita-Singhvi">GitHub</a></p>
             </div>
         </div>
+    </section>
 
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <div class="w3-card-4 project-card">
-                <header class="w3-container w3-black">
-                    <h3>Intelligent Crossway</h3>
-                </header>
-                <div class="w3-container">
-                    <p>Smart traffic management system using Python and OpenCV for real-time pedestrian detection and automated crosswalk signal activation.</p>
-                    <div class="w3-section">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Raspberry Pi</span>
-                        <span class="skill-tag">IoT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <footer>
+        <p>© 2025 Aashita Singhvi. All rights reserved.</p>
+    </footer>
 
-<!-- Skills Section -->
-<div class="w3-container w3-padding-64" id="skills">
-    <h2 class="w3-center">TECHNICAL SKILLS</h2>
-    
-    <div class="w3-content">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>Programming Languages</h3>
-                <div>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">Java</span>
-                </div>
-                
-                <h3>Frameworks</h3>
-                <div>
-                    <span class="skill-tag">NodeJS</span>
-                    <span class="skill-tag">Angular</span>
-                    <span class="skill-tag">ReactJS</span>
-                    <span class="skill-tag">ExpressJS</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">Flask</span>
-                </div>
-            </div>
-            
-            <div class="w3-col m6">
-                <h3>Cloud & DevOps</h3>
-                <div>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Kubernetes</span>
-                    <span class="skill-tag">Jenkins</span>
-                    <span class="skill-tag">Azure DevOps</span>
-                </div>
-                
-                <h3>Databases</h3>
-                <div>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">NoSQL</span>
-                    <span class="skill-tag">MySQL</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-    <p class="w3-medium">
-        © 2024 Aashita Singhvi. All rights reserved.
-    </p>
-</footer>
-
-</body>
-</html>
+<div id="jf-ext-auto-filling-notif-kdy47tyr6" count="0" style="position:fixed!important;top:0!important;right:0!important;background-color:green!important;color:#fff!important;padding:5px!important;z-index:10000!important;font-size:16px!important;line-height:16px!important;display:none!important"> Auto Filling... </div><div id="jf-ext-career-badge-kdy47tyr6" style="all:unset!important;position:fixed!important;top:20%!important;right:0!important;background-color:#d0473b!important;color:#fff!important;padding-left:5px!important;padding-right:5px!important;padding-top:10px!important;padding-bottom:10px!important;z-index:999999!important;font-size:14px!important;font-weight:700!important;cursor:pointer!important;font-family:Arial,sans-serif!important;height:80px important;line-height:30px!important;display:none!important"> <div style="display:block!important;line-height:30px!important">J</div> <div style="display:block!important;line-height:30px!important">F</div> </div><div id="jf-ext-text-captured-kdy47tyr6" style="position:fixed!important;top:0!important;right:0!important;background-color:green!important;color:#fff!important;padding:5px!important;z-index:10000!important;font-size:16px!important;line-height:16px!important;display:none!important"> Captured </div></body><div id="select-text-to-keyword" data-v-app=""><!----><section class="fh-w-1 fh=h-1" style="position: fixed; z-index: 2147483647; left: 1343.16px; top: 529.781px;"></section><!----></div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
