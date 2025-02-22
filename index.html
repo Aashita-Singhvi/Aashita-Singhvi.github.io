@@ -1,1 +1,217 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashita Singhvi - Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-card {
+            min-height: 340px;
+        }
+        .skill-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 4px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXPERIENCE</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+        <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILLS</a>
+    </div>
+</div>
+
+<!-- Home Section -->
+<header class="w3-container w3-padding-64 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Aashita Singhvi</h1>
+    <p class="w3-large">Software Development Engineer</p>
+    <div class="w3-padding-32">
+        <a href="mailto:asinghvi@seattleu.edu" class="w3-button w3-white w3-margin"><i class="fa fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/aaashita/" target="_blank" class="w3-button w3-white w3-margin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Aashita-Singhvi/" target="_blank" class="w3-button w3-white w3-margin"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="about">
+    <h2 class="w3-center">ABOUT ME</h2>
+    <div class="w3-content w3-text-grey">
+        <p class="w3-center">Experienced Software Development Engineer with 5+ years in full-stack and microservices development. Currently pursuing MS in Computer Science at Seattle University. Skilled in building scalable solutions, using AWS and CloudFormation for efficient deployments, and enhancing development strategies for high-quality code.</p>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div class="w3-container w3-padding-64" id="experience">
+    <h2 class="w3-center">WORK EXPERIENCE</h2>
+    
+    <div class="w3-content">
+        <div class="w3-card-4 w3-margin">
+            <header class="w3-container w3-black">
+                <h3>Software Developer Intern - Seattle University</h3>
+                <p class="w3-opacity">Nov 2023 – Present</p>
+            </header>
+            <div class="w3-container">
+                <ul class="w3-ul">
+                    <li>Developed AWS CloudFormation templates in YAML automating the deployment process</li>
+                    <li>Migrated PowerShell integrations to AWS using Python</li>
+                    <li>Collaborated on cross-functional projects involving AWS/Azure DevOps automation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin">
+            <header class="w3-container w3-black">
+                <h3>Senior Software Development Engineer - CSG Systems</h3>
+                <p class="w3-opacity">Feb 2023 - Aug 2023</p>
+            </header>
+            <div class="w3-container">
+                <ul class="w3-ul">
+                    <li>Architected centralized logging system for microservices</li>
+                    <li>Established coding standards and documentation practices</li>
+                    <li>Integrated Swagger documentation across services</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin">
+            <header class="w3-container w3-black">
+                <h3>Senior Software Engineer - Infosys</h3>
+                <p class="w3-opacity">Dec 2019 - Apr 2022</p>
+            </header>
+            <div class="w3-container">
+                <ul class="w3-ul">
+                    <li>Led product integration and solution delivery for US and UK clients</li>
+                    <li>Developed scalable microservices using Angular and NodeJS</li>
+                    <li>Redesigned configuration management system</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-container w3-padding-64 w3-light-grey" id="projects">
+    <h2 class="w3-center">PROJECTS</h2>
+    
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 project-card">
+                <header class="w3-container w3-black">
+                    <h3>Serverless Employee Management System</h3>
+                </header>
+                <div class="w3-container">
+                    <p>Cloud-native SAAS solution for workforce management using Python, AWS (S3, DynamoDB), microservices architecture, and RESTful APIs with OAuth 2.0.</p>
+                    <div class="w3-section">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 project-card">
+                <header class="w3-container w3-black">
+                    <h3>Address Manager</h3>
+                </header>
+                <div class="w3-container">
+                    <p>High-performance web service for validating and searching country-specific postal addresses, achieving 60ms response times with support for 1000+ concurrent requests.</p>
+                    <div class="w3-section">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Angular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card-4 project-card">
+                <header class="w3-container w3-black">
+                    <h3>Intelligent Crossway</h3>
+                </header>
+                <div class="w3-container">
+                    <p>Smart traffic management system using Python and OpenCV for real-time pedestrian detection and automated crosswalk signal activation.</p>
+                    <div class="w3-section">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-padding-64" id="skills">
+    <h2 class="w3-center">TECHNICAL SKILLS</h2>
+    
+    <div class="w3-content">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Programming Languages</h3>
+                <div>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+                
+                <h3>Frameworks</h3>
+                <div>
+                    <span class="skill-tag">NodeJS</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">ReactJS</span>
+                    <span class="skill-tag">ExpressJS</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Flask</span>
+                </div>
+            </div>
+            
+            <div class="w3-col m6">
+                <h3>Cloud & DevOps</h3>
+                <div>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                </div>
+                
+                <h3>Databases</h3>
+                <div>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">NoSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+    <p class="w3-medium">
+        © 2024 Aashita Singhvi. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
